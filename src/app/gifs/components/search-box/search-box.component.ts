@@ -22,6 +22,9 @@ export class SearchBoxComponent {
     constructor(private gisfService:GifsService){}
 
     searchTag():void{
+        if (this.tagInput.nativeElement.value === '')
+            return
+            
         const newTag = this.tagInput.nativeElement.value;
         this.gisfService.searchTag(newTag);
         //console.log({newTag});

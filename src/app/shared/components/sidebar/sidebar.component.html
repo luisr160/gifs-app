@@ -3,7 +3,7 @@
     <hr class="text-white">
 
     <div *ngFor="let tag of tags" class="list-group list-reset">
-        <button class="list-group-item list-group-item-action mb-2">{{tag}}</button>
+        <button class="list-group-item list-group-item-action mb-2">{{tag | titlecase}}</button>
     </div>
 
 </div>
