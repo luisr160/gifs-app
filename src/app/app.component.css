@@ -1,3 +1,14 @@
 .hidden{
     overflow: hidden;
 }
+
+#sidebar-btn{
+    display: none;
+}
+
+@media only screen and (max-width:768px){
+    #sidebar-btn{
+        display: auto;
+    }
+    
+}

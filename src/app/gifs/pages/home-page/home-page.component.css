@@ -1,0 +1,14 @@
+#home-page{
+    width: 80vw;
+    margin-left: 20vw;
+}
+
+@media only screen and (max-width:768px){
+    #home-page{
+        width: 100vw;
+        margin-left: 0;
+       
+        
+    }
+    
+}

@@ -8,6 +8,8 @@ import { GifsService } from 'src/app/gifs/services/gifs.service';
 })
 export class SidebarComponent implements OnInit {
 
+  public collapseToggle:boolean = false;
+
   constructor(public gifsService:GifsService) {}
 
   get tags(){
@@ -21,6 +23,10 @@ export class SidebarComponent implements OnInit {
   ngOnInit(): void {
 
     
+  }
+
+  onToggle():void{
+    this.collapseToggle = !this.collapseToggle;
   }
 
 

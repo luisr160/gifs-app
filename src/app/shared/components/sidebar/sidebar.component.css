@@ -1,11 +1,52 @@
 #sidebar{
     height: 100vh;
     width: 250px; 
+    position: fixed;
 }
+
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.sidebar-header .cross-btn{
+    color:tomato;
+}
+
+.circular-button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    display: none;
+    color: white;
+    position: fixed;
+    margin-top: 5vw ;
+    margin-left: 80vw;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.circular-button:hover{
+    background-color: #e5e5e5;
+}
+
 
 @media only screen and (max-width:768px){
     #sidebar{
-        display:none
+        display:none;
+        z-index:9998;
+    }
+
+    .circular-button{
+        display: flex;
     }
     
 }
+
